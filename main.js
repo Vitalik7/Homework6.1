@@ -1,5 +1,3 @@
-
-
 function footballTeams(teamName, championshipName, placeTeam) {
 
     var name = teamName
@@ -7,23 +5,22 @@ function footballTeams(teamName, championshipName, placeTeam) {
     var place = placeTeam 
     
     
-    this.getName = function () {
-        console.log(name)
+    this.name = function () {
+        return name
     }
 
-    this.getChampionship = function () {
-        console.log(championship)
+    this.championship = function () {
+        return championship
     }
 
-    this.getPlace = function () {
-        console.log(place)
+    this.place = function () {
+        return place
     }
     return function () {
         console.log('Team name : ' + name)
         console.log('Name championship : ' + championship)
         console.log('Place team : ' + place)
     }
-
 }
 
 var footballTeams = new footballTeams('Dynamo Kyiv', 'Ukrainian Premier League', '2')
